@@ -4,6 +4,7 @@
 Hello world
 <div id="clock"></div>
 <script src="/bower_components/jquery.countdown/dist/jquery.countdown.js" type = "text/javascript">
+var fiveSeconds = new Date().getTime() + 5000;
 $('#clock').countdown(fiveSeconds, {elapse: true})
 .on('update.countdown', function(event) {
   var $this = $(this);
